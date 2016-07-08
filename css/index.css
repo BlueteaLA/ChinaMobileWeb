@@ -1,0 +1,1124 @@
+ /*最开始对整体进行设置，将一些标签的固有属性去掉 */
+body,h1,h2,h3,h4,h5,h6,ul,li,p,input,dl,dd,dt,ol,pre{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 微软雅黑;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+
+
+/* 首先将总体布局布出来 */
+.head{
+	width: 100%;
+	height: 26px;
+	background: #f6f6f6;
+	border-bottom: 1px solid #ececec;
+}
+.head .head_nav{
+	width: 1200px;
+	height: 26px;
+	background: #f6f6f6;
+	margin: 0 auto;
+}
+.content{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+.content .top{
+	width: 1200px;
+	height: 96px;
+	background: #ffffff;
+	margin: 0 auto
+}
+.content .mainbav{
+	width: 1200px;
+	height: 40px;
+	background: #e4e4e4;
+	margin: 0 auto;
+	position: relative;
+}
+.content .banner{
+	width: 1200px;
+	height: 370px;
+	background: #ffffff;
+	margin: 0 auto
+}
+.content .banner_mini{
+	width: 1170px;
+	height: 160px;
+	background: #dfdfdf;
+	margin: 0 auto;
+	padding: 10px 15px;
+	position: relative;
+	overflow: hidden;
+}
+.content .fourg{
+	width: 1198px;
+	height: 426px;
+	background: blue;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+	margin-top: 10px;
+}
+.content .buy_phone{
+	width: 1198px;
+	height: 428px;
+	background: green;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+	margin-top: 10px;
+}
+.content .business{
+	width: 1198px;
+	height: 426px;
+	background: blue;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+	margin-top: 10px;
+}
+.content .public{
+	width: 1198px;
+	height: 38px;
+	background: #ffffff;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+	margin-top: 10px;
+}
+.content .link{
+	width: 1198px;
+	height: 228px;
+	background: #ffffff;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+	margin-top: 10px;
+}
+.footer{
+	width: 1200px;
+	height: 213px;
+	background: #ffffff;
+	margin: 0 auto;
+}
+
+
+
+
+
+/* 对头部进行样式设计 */
+.head a{
+    color: #888888;
+    font-size: 12px;
+}
+.head .head_nav .head_left{
+    width: 211px;
+    height: 26px;
+    float:left;
+}
+.head .head_nav .head_left a{
+    display: block;
+    line-height: 26px;
+}
+.head .head_nav .head_left li{
+    float: left;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-right: 1px solid #ececec;
+}
+.head .head_nav .head_right{
+    width: 340px;
+    height: 26px;        
+    float: right;
+    position: relative;
+}
+.head .head_nav .head_right li{
+	float: left;
+	color: #e3eaf6;
+}
+.head .head_nav .head_right a{
+    display: block;
+    line-height: 26px;
+}
+.head .head_right .head_right1{
+    padding-right: 10px;
+    padding-left: 32px; 
+    background: url("../images/t3-1.png") no-repeat;
+    background-position: 14px 7px;
+    cursor: pointer;
+}
+.head .head_right .head_right1 a{
+    display: block;
+    width: 24px;
+    height: 26px;
+    color: #ea4e9f; 
+}
+.head .head_right .head_right1 div{
+	width: 170px;
+	height: 122px;
+	background: #ffffff;
+	position: absolute;
+	top: 27px;left: 0px;
+	box-shadow: 0px 4px 4px #dbdbdb;
+	display: none;
+	z-index: 1;
+}
+.head .head_right .head_right1 div ul li{
+	width: 138px;
+	height: 33px;
+	border: 1px solid #e4e4e4;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	color: #25b1fd;
+	font-size: 14px;
+	text-align: center;
+	line-height: 33px;
+}
+.head .head_right .head_right1 .dlk .l1{
+	margin-top: 25px;
+}
+.head .head_right .head_right1 div ul li:hover{
+	background: #25b1fd;
+	border: 1px solid #25b1fd;
+	color: #ffffff;
+}
+.head .head_right .head_right2 .yyt{
+    padding-right: 10px;
+    padding-left: 30px;
+    background: url("../images/t1-1.png") no-repeat;
+    background-position: 10px 7px;
+}
+.head .head_right .head_right2 .yytp{
+	width: 160px;
+	height: 156px;
+	background: url("../images/ewm.jpg") no-repeat #ffffff center 16px;
+	position: absolute;
+	top: 27px;left: 70px;
+	z-index: 1;
+	color: #333333;
+	font-size: 14px;
+	text-align: center;
+	line-height: 266px;
+	box-shadow: 0px 2px 2px #dbdbdb;
+	display: none;
+}
+.head .head_right .head_right3{
+    padding-right: 10px;
+    padding-left: 10px;
+} 
+.head .head_nav a:hover{color: #25b1fd;}
+
+
+
+
+
+/* 对主体部分的顶部进行样式设计 */
+.content .top .logoarea a{
+	display: block;
+	width: 230px;
+	height: 69px;
+	text-align: center;
+    padding-top: 27px;
+    margin-right: 0px;
+    float: left;
+}
+.content .top .logoarea a img{
+	display: inline;
+	float: right;
+}
+.content .top .logoarea select{
+	float: left;
+	margin-top: 38px;
+	margin-left: 18px;
+}
+.content .top .search{
+	width: 550px;
+	height: 70px;
+	background: #ffffff;
+	float: right;
+	margin-top: 15px;
+	padding-right: 50px
+}
+.content .top .search .input1{
+	width: 454px;
+	height: 32px;
+	float: left;
+	font-size: 14px;
+	color: #cccccc;
+	border: 2px solid #dfdfdf;
+}
+.content .top .search .input2{
+	float: left;
+	width: 85px;
+	height: 36px;
+	background: url("../images/search.png") no-repeat #25b2fe;
+	background-position: 16px 11px;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.content .top .search .input2 input{
+	background: #25b2fe;
+	border: none;
+	color: #ffffff;
+	margin: 8px 0px 0px 38px;
+	cursor: pointer;
+}
+.content .top .search ul li{
+	float: left;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-top: 8px;
+}
+.content .top .search ul .c1{
+	color: #e40077;
+}
+.content .top .search ul .c2{
+	color: #666666;
+}
+.content .top .search ul li a:hover{color: #007bc7}
+
+
+
+
+
+
+/* 对主体部分的主导航进行样式设计 */
+.content .mainbav ul li{
+	float: left;
+}
+.content .mainbav ul li a{
+	color: #666666;
+    display: block;
+    width: 259px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.content .mainbav ul li a:hover{
+	background: #f3f3f3;
+	color: #0085d0;
+}
+.content .mainbav .mb1{
+	width: 158px;
+	height: 38px;
+	border-top: 2px solid #0085d0;
+	font-weight: bold;
+}
+.content .mainbav .mb1 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.content .mainbav .mb2{
+	width: 259px;
+	height: 40px;
+    border-left: 1px solid #ffffff;
+}
+.content .mainbav .list1{
+	width: 1200px;
+	height: 40px;
+	background: #ffffff;
+	position: absolute;
+	top: 40px;left: 0px;
+	display: none;
+	z-index: 10;
+	font-size: 14px;
+	box-shadow: 0px 2px 4px #e7e7e7;
+}
+.content .mainbav .list1 ul li{
+	float: left;
+	width: 166px;
+	height: 100%;
+}
+.content .mainbav .list1 ul li a{
+	display: block;
+	width: 166px;
+	height: 100%;
+}
+.content .mainbav .list1 ul li a:hover{
+	background: none;
+}
+
+
+
+
+
+/* 对主体部分的广告部分进行样式设计 */
+.content .banner .banner-left{
+	width: 157px;
+	height: 348px;
+	border: 1px solid #b8d9e9;
+	float: left;
+	margin-top: 10px; 
+}
+.content .banner .banner-left a{
+    color: #333333;
+}
+.content .banner .banner-left a:hover{
+	color: #49bdfc;
+}	
+.content .banner .banner-left .left1{
+	width: 100%;
+	height: 33px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 33px;
+}
+.content .banner .banner-left .left2 li{
+	height: 62px;
+    width: 138px;
+    border-top: 1px solid #e9e9e9;
+    margin: 0 auto;
+}
+.content .banner .banner-left .left2 li a{
+    display: block;
+    width: 90px;
+    height: 42px;
+    text-align: center;
+    line-height: 22px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.content .banner .banner-left .left2 .li1{
+    background: url("../images/shopclass.gif") no-repeat 0px 20px;
+} 
+.content .banner .banner-left .left2 .li2{
+    background: url("../images/shopclass.gif") no-repeat 0px -28px; 	
+} 
+.content .banner .banner-left .left2 .li3{
+    background: url("../images/shopclass.gif") no-repeat 0px -78px;		
+} 
+.content .banner .banner-left .left2 .li4{
+    background: url("../images/shopclass.gif") no-repeat 0px -130px;	
+} 
+.content .banner .banner-left .left2 .li5{
+    background: url("../images/shopclass.gif") no-repeat 0px -172px;		
+}
+.content .banner_main{
+	width: 740px;
+	height: 350px;
+	margin: 0 auto;
+	float: left;
+	margin: 10px 10px 0px 10px; 
+	position: relative; 
+	overflow: hidden;
+}
+.content .banner_main .banner_photo{
+	width: 100%;
+	height: 100%;
+}
+.content .banner_main .banner_photo a{
+	display: block;
+	position: absolute;
+	top: 0px;left: 0px;
+}
+.content .banner_main .diandian{
+	width: 162px;
+	height: 16px;
+	position: absolute;
+	bottom: 8px;left: 289px;
+	z-index: 10; 
+}
+.content .banner_main .diandian ul{
+	width: 100%;
+	height: 100%;
+}
+.content .banner_main .diandian ul li{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #d4d4d4;
+	float: left;
+	margin-left: 2px;
+	cursor: pointer;
+}
+.content .banner .banner_main .next{
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	top: 135px;left: 0px;
+	z-index: 10;
+	cursor: pointer;
+}
+.content .banner .banner_main .next ul{
+	width: 100%;
+	height: 100%;
+}
+.content .banner .banner_main .next ul li{
+	width: 35px;
+	height: 70px;
+	opacity: 0.4;
+}
+.content .banner .banner_main .next .arrow1{
+	float: left;
+	background: url("../images/lbnextpre.png");
+}
+.content .banner .banner_main .next .arrow2{
+	float: right;
+	background: url("../images/lbnextpre.png") 35px 0px;
+}
+.content .banner .banner_main .next ul li:hover{
+	opacity: 0.6;
+}
+.content .banner_right{
+	width: 279px;
+	height: 348px;
+	background: #ffffff;
+	float: left;
+	margin-top: 10px;
+	border: 1px solid #dfdfdf;
+}
+.content .banner_right .top{
+	width: 279px;
+	height: 168px;
+	background: red;
+}
+.content .banner_right .top ul li{
+	width: 93px;
+	height: 84px;
+	background: #ffffff;
+	float: left;
+}
+.content .banner_right .top ul li a{
+	font-size: 12px;
+	color: #4e4e4e;
+	display: block;
+	width: 93px;
+	height: 26px;
+	padding-top: 62px;
+	padding-left: 22px;
+}
+.content .banner_right .top ul .p1{
+	background: url("../images/20160309153626619Vpx.gif") no-repeat 28px 20px #ffffff;
+}
+.content .banner_right .top ul .p2{
+	background: url("../images/20160309153632535P91.gif") no-repeat 28px 20px #ffffff;
+}
+.content .banner_right .top ul .p3{
+	background: url("../images/20160309153640804jhn.gif") no-repeat 28px 20px #ffffff;
+}
+.content .banner_right .top ul .p4{
+	background: url("../images/20160309153650757ffj.gif") no-repeat 28px 20px #ffffff;
+}
+.content .banner_right .top ul .p5{
+	background: url("../images/20160309153659342eAz.gif") no-repeat 28px 20px #ffffff;
+}
+.content .banner_right .top ul .p6{
+	background: url("../images/201603091539003790jn.gif") no-repeat 28px 20px #ffffff;
+}
+.content .banner_right .botton{
+	width: 234px;
+	height: 180px;
+	margin: 0 auto;
+}
+.content .banner_right .botton h5 a{
+	display: block;
+	height: 30px;
+	font-size: 14px;
+	color: #333333;
+	padding-top: 10px;
+}
+.content .banner_right .botton h5 a:hover{
+	text-decoration: underline;
+}
+.content .banner_right .botton .input1{
+	width: 234px;
+	height: 35px;
+	color: #cccccc;
+	border: 1px solid #dadada;
+}
+.content .banner_right .botton .money{
+	width: 234px;
+	height: 40px;
+	padding-top: 10px;
+}
+.content .banner_right .botton .money h6{
+	width: 42px;
+	height: 34px; 
+	border: 1px solid #cccccc;
+	float: left;
+	font-size: 12px;
+	color: #666666;
+	margin-right: 4px;
+	text-align: center;
+	line-height: 34px;
+	cursor: pointer;
+	/*onlick-color: #e40077;*/
+}
+.content .banner_right .botton .money .choose{
+	background: #e40077;
+	color: #ffffff;
+}
+.content .banner_right .botton .money h6:hover{
+	background: #e40077;
+	color: #ffffff;
+}
+.content .banner_right .botton .money a{
+	display: block;
+	width: 40px;
+	height: 34px; 
+	float: left;
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+	line-height: 34px;
+}
+.content .banner_right .botton .b{
+	width: 234px;
+	height: 40px;
+}
+.content .banner_right .botton .b .input2{
+	width: 90px;
+	height: 35px;
+	background: #33acfb;
+	font-size: 14px;
+	color: #ffffff;
+	margin-left: 46px;
+	margin-top: 6px;
+	float: left;
+	border: none;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.content .banner_right .botton .b .p1{
+	font-size: 14px;
+	color: #e40077;
+	float: left;
+	font-weight: bold;
+	padding-top: 14px;
+	padding-left: 4px;
+}
+
+
+
+
+.content .banner_mini .bgbd{
+	width: 1170px;
+	height: 160px;
+	border-top: 10px solid #dfdfdf;
+	border-bottom: 10px solid #dfdfdf;
+	border-left: 15px solid #dfdfdf;
+	border-right: 15px solid #dfdfdf;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: transparent;
+}
+.content .banner_mini .mini_center{
+	width: 1770px;
+	height: 160px;
+	background: #dfdfdf;
+	position: absolute;
+}
+.content .banner_mini .mini_center .allphoto{
+	width: 100%;
+	height: 100%;
+	background: #dfdfdf;
+}
+.content .banner_mini .mini_center li{
+	width: 285px;
+	height: 160px;
+	background: #ffffff;
+	float: left;
+}
+.content .banner_mini .mini_center li a{
+	display: block;
+	width: 285px;
+	height: 160px;
+}
+.content .banner_mini .mini_center li a h4{
+	font-size: 18px;
+	color: #333333;
+	padding-top: 10px;
+	padding-left: 20px; 
+}
+.content .banner_mini .mini_center li a p{
+	font-size: 14px;
+	color: #666666;
+	padding-top: 2px;
+	padding-left: 20px;
+}
+.content .banner_mini .mini_center .photo1{
+	margin-right: 10px;
+	background: url("../images/banner_mini1.jpg") no-repeat #ffffff 50px 46px;
+}
+.content .banner_mini .mini_center .photo2{
+	margin-right: 10px;
+	background: url("../images/banner_mini2.jpg") no-repeat #ffffff 50px 46px;
+}
+.content .banner_mini .mini_center .photo3{
+	margin-right: 10px;
+	background: url("../images/banner_mini3.jpg") no-repeat #ffffff 50px 46px;
+}
+.content .banner_mini .mini_center .photo4{
+	margin-right: 10px;
+	background: url("../images/banner_mini4.jpg") no-repeat #ffffff 50px 46px;
+}
+.content .banner_mini .mini_center .photo5{
+	margin-right: 10px;
+	background: url("../images/20160328162817086hox.jpg") no-repeat #ffffff 50px 46px;
+}
+.content .banner_mini .mini_center .photo6{
+	margin-right: 10px;
+	margin-right: 10px; 
+	background: url("../images/20160328163345169aci.jpg") no-repeat #ffffff 50px 46px;
+}
+.content .banner_mini .btn{
+	width: 1200px;
+	height: 35px;
+	position: absolute;
+	top: 50%;margin-top: -18px;left: 0px;
+	cursor: pointer;
+	z-index: 20;
+}
+.content .banner_mini .btn li{
+	width: 30px;
+	height: 35px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.content .banner_mini .btn .jiantou1{
+	float: left;
+	background: url("../images/lbnextpre.gif");
+}
+.content .banner_mini .btn .jiantou2{
+	float: right;
+	background: url("../images/lbnextpre.gif") 30px 0px;
+}
+
+
+
+/* 对4G专区进行样式设计 */
+.content .fourg .top{
+	width: 1198px;
+	height: 48px;
+	background: #ffffff;
+}
+.content .fourg .top h5{
+	font-size: 14px;
+	color: #0085d8;
+	float: left;
+	margin-top: 14px;
+	padding-left: 26px;
+}
+.content .fourg .top a{
+	font-size: 12px;
+	color: #666666;
+	float: right;
+	margin-top: 16px;
+	padding-right: 26px;
+}
+.content .fourg .top a:hover{color: #007bc7;}
+.content .fourg .bottom .left{
+	width: 298px;
+	height: 377px;
+	background: #ffffff;
+	border-top: 1px solid #dfdfdf;
+	float: left;
+}
+.content .fourg .bottom .right ul li{
+	width: 299px;
+	height: 188px;
+	background: #ffffff;
+	float: left;
+	border-top: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+}
+.content .fourg .bottom .right ul li a{
+		display: block;
+		width: 281px;
+		height: 176px;
+		color: #333333;
+		padding: 12px 0px 0px 18px;
+		font-size: 18px;
+}
+.content .fourg .bottom .right ul li a p{
+	color: #666666;
+	font-size: 14px;
+	padding-top: 8px;
+}
+.content .fourg .bottom .right .photo1{
+	background: url("../images/201508031620237462GV.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.content .fourg .bottom .right .photo2{
+	background: url("../images/20150731110318112qP3.jpg") no-repeat #efefef;
+	background-position: 78px 58px;
+}
+.content .fourg .bottom .right .photo3{
+	background: url("../images/20150803162344100wTp.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.content .fourg .bottom .right .photo4{
+	background: url("../images/20150805135127185KWO.jpg") no-repeat #efefef;
+	background-position: 78px 58px;
+}
+.content .fourg .bottom .right .photo5{
+	background: url("../images/20150803163113726kdw.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.content .fourg .bottom .right .photo6{
+	background: url("../images/untitled.png") no-repeat #efefef;
+	background-position: 78px 58px;
+}
+
+
+
+
+
+/* 对卖手机的部分进行样式设计 */
+.content .buy_phone .top{
+	width: 1198px;
+	height: 48px;
+	background: #ffffff;
+}
+.content .buy_phone .top h5{
+	font-size: 14px;
+	color: #0085d8;
+	float: left;
+	margin-top: 14px;
+	padding-left: 26px;
+}
+.content .buy_phone .top a{
+	font-size: 12px;
+	color: #666666;
+	float: right;
+	margin-top: 16px;
+	padding-right: 26px;
+}
+.content .buy_phone .top a:hover{color: #007bc7;}
+.content .buy_phone .bottom li{
+	height: 379px;
+	background: #ffffff;
+	float: left;
+	border-top: 1px solid #dfdfdf;
+}
+.content .buy_phone .bottom li a{
+	display: block;
+	width: 299px;
+	height: 379px;
+	font-size: 12px;
+	color: #666666;
+	padding-left: 20px;
+	padding-top: 25px;
+}
+.content .buy_phone .bottom li a .p1{
+	font-size: 10px;
+	color: #0085d0;
+	padding-top: 6px;
+}
+.content .buy_phone .bottom li a .p2{
+	font-size: 20px;
+	color: #ef33a2;
+	padding-top: 12px;
+}
+.content .buy_phone .bottom .phone1{
+	width: 299px;
+	border-right: 1px solid #dfdfdf;
+	background: url("../images/2015102815365594535I.jpg") no-repeat #ffffff;
+	background-position: 72px 102px;
+}
+.content .buy_phone .bottom .phone2{
+	width: 299px;
+	border-right: 1px solid #dfdfdf;
+	background: url("../images/20160307163400545wC3.jpg") no-repeat #ffffff;
+	background-position: 72px 102px;
+}
+.content .buy_phone .bottom .phone3{
+	width: 299px;
+	border-right: 1px solid #dfdfdf;
+	background: url("../images/20160111171022767Q4U.jpg") no-repeat #ffffff;
+	background-position: 72px 102px;
+}
+.content .buy_phone .bottom .phone4{
+	width: 298px;
+	background: url("../images/201602231106027466du.jpg") no-repeat #ffffff;
+	background-position: 72px 102px;
+}
+
+
+
+
+
+/* 业务专区样式设计 */
+.business .top{
+	width: 1198px;
+	height: 48px;
+	background: #ffffff;
+}
+.business .top h5{
+	font-size: 14px;
+	color: #0085d8;
+	float: left;
+	margin-top: 14px;
+	padding-left: 26px;
+}
+.business .top a{
+	font-size: 12px;
+	color: #666666;
+	float: right;
+	margin-top: 16px;
+	padding-right: 26px;
+}
+.business .top a:hover{color: #007bc7;}
+.business .bottom .left{
+	width: 298px;
+	height: 377px;
+	background: #ffffff;
+	border-top: 1px solid #dfdfdf;
+	float: left;
+}
+.business .bottom .right ul li{
+	width: 299px;
+	height: 188px;
+	background: #ffffff;
+	float: left;
+	border-top: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+}
+.business .bottom .right ul li a{
+		display: block;
+		width: 299px;
+		height: 188px;
+		color: #333333;
+		padding: 12px 0px 0px 18px;
+		font-size: 18px;
+}
+.business .bottom .right ul li a p{
+	color: #666666;
+	font-size: 14px;
+	padding-top: 8px;
+}
+.business .bottom .right .photo1{
+	background: url("../images/20151124143631694xp4.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.business .bottom .right .photo2{
+	background: url("../images/20151124153807578Eoq.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.business .bottom .right .photo3{
+	background: url("../images/201508031516432745a5.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.business .bottom .right .photo4{
+	background: url("../images/20150803152021468c1Y.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.business .bottom .right .photo5{
+	background: url("../images/20150803152953864xK1.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+.business .bottom .right .photo6{
+	background: url("../images/20150803153231481OjF.jpg") no-repeat #ffffff;
+	background-position: 78px 58px;
+}
+
+
+
+
+/* 公告区 */
+.content .public ul{
+	font-size: 14px;
+	color: #666666;
+	overflow: hidden;
+}
+.content .public ul a{
+	color: #0085d0;
+}
+.content .public ul li{
+	display: block;
+	float: left;
+	line-height: 38px;
+	position: relative;
+}
+.content .public ul .li1{
+	width: 60px;
+	height: 38px;
+	margin-left: 40px;
+	background: url("../images/indexgg.gif") no-repeat;
+	background-position: 0px 12px;
+	padding-left: 30px;
+}
+.content .public ul .li2{
+	width: 254px;
+	height: 38px;
+	margin-left: 14px;
+}.content .public ul .li3{
+	width: 82px;
+	height: 38px;
+	margin-left: 124px; 
+	color: #cccccc;
+}
+.content .public ul .li4{
+	width: 248px;
+	height: 38px;
+	margin-left: 120px;
+}
+.content .public ul .li5{
+	width: 80px;
+	height: 38px;
+	margin-left: 52px;
+	color: #cccccc;
+}
+.content .public ul .li6{
+	width: 28px;
+	height: 38px;
+	margin-left: 52px;
+	color: #0085d0;
+	cursor: pointer;
+}
+.content .public ul .li7{
+	width: 28px;
+	height: 38px;
+	color: #0085d0;
+	cursor: pointer;
+}
+.content .public ul li a:hover{text-decoration: underline;}
+
+
+
+
+/* 友情链接 */
+.content .link div{
+	width: 200px;
+	height: 178px;
+	background: #ffffff;
+	float: left;
+	margin-top: 28px;
+	margin-left: 38px;
+}
+.content .link div h4{
+	font-size: 14px;
+	color: #666666;
+}
+.content .link div a{
+	display: block;
+	width: 200px;
+	height: 14px;
+	font-size: 14px;
+	padding-top: 10px;
+	color: #666666;
+}
+.content .link div a:hover{
+	color: #007bc7;
+	text-decoration: underline;
+}
+
+
+
+
+
+/* 声明 */
+.footer .center{
+	width: 662px;
+	height: 166px;
+	background: #ffffff;
+	margin: 0 auto;
+	padding-top: 27px;
+}
+
+.footer .center ul li{
+	font-size: 12px;
+	color: #666666;
+	float: left;
+}
+.footer .center ul li a{
+	color: #666666;
+	display: block;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.footer .center .d2{
+	padding-top: 30px;
+	padding-left: 50px
+}
+.footer .center .d3{
+	padding-top: 30px;
+	padding-left: 202px;
+}
+.footer .center .d4{
+	padding-top: 24px;
+	padding-left: 110px;
+}
+.footer .center .d5{
+	padding-top: 34px;
+	padding-left: 170px;
+}
+.footer .center .d5 .b1{
+	padding-top: 12px;
+	padding-left: 24px;
+}
+.footer .center .d5 .b2{
+	padding-top: 16px;
+}
+.footer .center a:hover{
+	color: #007bc7;
+	text-decoration: underline;
+}
+
+
+
+
+
+.online_service{
+	width: 122px;
+	height: 117px;
+	position: fixed;
+	bottom: 43px;right: 0px;
+	z-index: 100;
+}
+.online_service .c{
+	position: absolute;
+	left: 80px;top: 0px;
+	z-index: 10;
+}
+.online_service .p{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.online_service ul li{
+	width: 86px;
+	height: 22px;
+}
+.online_service .p .p1{
+	background: url("../images/zxzx.gif");
+	position: absolute;
+	left: 60px; top: 20px;
+	z-index: 2;
+}
+.online_service .p .p2{
+	background: url("../images/cjwt.gif");
+	position: absolute;
+	left: 60px; top: 52px;
+	z-index: 2;
+}
+.online_service .p .p3{
+	background: url("../images/tsjy.gif");
+	position: absolute;
+	left: 60px; top: 84px;
+	z-index: 2;
+}
+.online_service ul li a{
+	display: block;
+	width: 86px;
+	height: 22px;
+}
+/*.online_service ul li a:hover{
+	left: -60px;
+}*/
+
+/*
+x.gif
+*/
